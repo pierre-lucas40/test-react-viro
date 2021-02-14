@@ -32,8 +32,7 @@ jobs:
             -workspace ViroReact.xcworkspace/ \
             -scheme ViroReact \
             -sdk iphoneos \
-            -configuration Debug \
-            -UseModernBuildSystem=NO
+            -configuration Release
 
       # Prepare Release scripts should also run our gradle builds
       # required for Android RN Frameworks.
