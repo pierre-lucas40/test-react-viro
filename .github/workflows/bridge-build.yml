@@ -12,7 +12,6 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 12
-          registry-url: https://npm.pkg.github.com/
           scope: "@pierre-lucas40"
 
       # Setup dependencies for React Native
@@ -32,7 +31,8 @@ jobs:
             -workspace ViroReact.xcworkspace/ \
             -scheme ViroReact \
             -sdk iphoneos \
-            -configuration Release
+            -configuration Release \
+            clean build
 
       # Prepare Release scripts should also run our gradle builds
       # required for Android RN Frameworks.
@@ -47,4 +47,4 @@ jobs:
 
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
