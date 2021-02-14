@@ -549,6 +549,13 @@
 			remoteGlobalIDString = 4B33BA0D74E94909898237A117E85E60;
 			remoteInfo = "Pods-ViroReact";
 		};
+		8F5E83DB25D9540400069512 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE6D792B6328AAF68E46924D7F466631;
+			remoteInfo = "React-Core-AccessibilityResources";
+		};
 		A2309286248F709800A5A81F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BDD9D9E1E09F39B00A42870 /* Pods.xcodeproj */;
@@ -1313,6 +1320,7 @@
 				1385B2B120CA0A5200C3B6CE /* libPods-ViroReact_static_lib.a */,
 				A230928F248F709800A5A81F /* libRCTTypeSafety.a */,
 				A2309291248F709800A5A81F /* libReact-Core.a */,
+				8F5E83DC25D9540400069512 /* AccessibilityResources.bundle */,
 				A2309293248F709800A5A81F /* libReact-CoreModules.a */,
 				A2309295248F709800A5A81F /* libReact-cxxreact.a */,
 				A2309297248F709800A5A81F /* libReact-jsi.a */,
@@ -1733,6 +1741,13 @@
 			remoteRef = 8BDD9DA21E09F39B00A42870 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		8F5E83DC25D9540400069512 /* AccessibilityResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AccessibilityResources.bundle;
+			remoteRef = 8F5E83DB25D9540400069512 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		A2309287248F709800A5A81F /* libDoubleConversion.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1912,7 +1927,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $SRCROOT/ngrok_launch.sh;
 		};
 		1385B1CB20CA091C00C3B6CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1943,7 +1957,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $SRCROOT/ngrok_launch.sh;
 		};
 		1385B29820CA091C00C3B6CE /* Lipo static library */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2002,7 +2015,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = $SRCROOT/ngrok_launch.sh;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -2579,6 +2591,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 26E68AF050CB842CF2264F09 /* Pods-ViroReact.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2604,6 +2617,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EB99B003C13099B09EC75DC /* Pods-ViroReact.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

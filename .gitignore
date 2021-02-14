@@ -1,1 +1,11 @@
 node_modules
+yarn.lock
+
+# iOS
+ios/Pods
+ios/dist/lib
+ios/dist/armv7_arm64
+ios/**/xcuserdata
+
+# Mac
+.DS_Store
