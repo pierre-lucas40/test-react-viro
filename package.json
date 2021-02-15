@@ -1,7 +1,7 @@
 {
   "name": "@pierre-lucas40/test-react-viro",
   "main": "index.js",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "license": "MIT",
   "repository": "git@github.com:pierre-lucas40/test-react-viro.git",
   "description": "Fork of Viro complaint with new Apple conditions. Removes UIWebView",
