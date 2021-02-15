@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 12
           registry-url: "https://registry.npmjs.org"
-          scope: "@pierre-lucas40"
 
       # Setup dependencies for React Native
       # Note, brew and node are already installed on github workflows.
@@ -45,6 +44,6 @@ jobs:
       #     name: react-viro-2.20.0.tgz
       #     path: ./react-viro-2.20.0.tgz
 
-      - run: echo "${NODE_AUTH_TOKEN}" && npm publish --access public
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
